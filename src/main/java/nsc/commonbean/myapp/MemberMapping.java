@@ -1,6 +1,10 @@
 package nsc.commonbean.myapp;
 
-public class MemberMapping {
+import java.io.Serializable;
+
+public class MemberMapping implements Serializable{
+	private static final long serialVersionUID = -4416251441320316997L;
+	
 	private int role;
 
 	public int getRole() {
