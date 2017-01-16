@@ -3,7 +3,8 @@ package nsc.commonbean.myapp.usercontent;
 import java.util.Date;
 
 public class UserContentMapping {	
-	private int id;	
+	private int id;
+	private String fullUserName;
 	private String message;
 	private Date createDate;
 	private int likeCount;
@@ -45,6 +46,12 @@ public class UserContentMapping {
 	}
 	public void setShareCount(int shareCount) {
 		this.shareCount = shareCount;
+	}
+	public String getFullUserName() {
+		return fullUserName;
+	}
+	public void setFullUserName(String fullUserName) {
+		this.fullUserName = fullUserName;
 	}
 	
 }
