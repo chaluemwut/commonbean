@@ -7,6 +7,7 @@ public class PromotionMapping {
 	private String title;
 	private String message;
 	private Date createDate;
+	private boolean isUploadImage;
 	
 	public int getId() {
 		return id;
@@ -31,6 +32,12 @@ public class PromotionMapping {
 	}
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
+	}
+	public boolean isUploadImage() {
+		return isUploadImage;
+	}
+	public void setUploadImage(boolean isUploadImage) {
+		this.isUploadImage = isUploadImage;
 	}
 
 }

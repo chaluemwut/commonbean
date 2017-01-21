@@ -2,3 +2,4 @@ nsc/commonbean/myapp/MemberMapping.class
 nsc/commonbean/myapp/ContentGroupMapping.class
 nsc/commonbean/myapp/usercontent/UserContentMapping.class
 nsc/commonbean/myapp/ContentMapping.class
+nsc/commonbean/myapp/promo/PromotionMapping.class
