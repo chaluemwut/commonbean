@@ -7,6 +7,7 @@ public class ContentGroupMapping implements Serializable {
 	
 	private int id;
 	private String name;
+	private boolean isUploadImage;
 	private long createDate;
 	
 	public int getId() {
@@ -26,6 +27,12 @@ public class ContentGroupMapping implements Serializable {
 	}
 	public void setCreateDate(long createDate) {
 		this.createDate = createDate;
+	}
+	public boolean isUploadImage() {
+		return isUploadImage;
+	}
+	public void setUploadImage(boolean isUploadImage) {
+		this.isUploadImage = isUploadImage;
 	}
 	
 }

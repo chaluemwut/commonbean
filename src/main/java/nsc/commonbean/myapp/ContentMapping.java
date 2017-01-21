@@ -8,6 +8,7 @@ public class ContentMapping implements Serializable {
 	private int productId;
 	private String productName;
 	private String detail;
+	private int numberOfImage;
 	private BigDecimal price;
 
 	public int getProductId() {
@@ -41,5 +42,14 @@ public class ContentMapping implements Serializable {
 	public void setPrice(BigDecimal price) {
 		this.price = price;
 	}
+
+	public int getNumberOfImage() {
+		return numberOfImage;
+	}
+
+	public void setNumberOfImage(int numberOfImage) {
+		this.numberOfImage = numberOfImage;
+	}
+
 
 }
