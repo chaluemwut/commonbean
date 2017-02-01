@@ -54,4 +54,11 @@ public class UserContentMapping {
 		this.fullUserName = fullUserName;
 	}
 	
+	@Override
+	public String toString() {
+		return "UserContentMapping [id=" + id + ", fullUserName=" + fullUserName + ", message=" + message
+				+ ", createDate=" + createDate + ", likeCount=" + likeCount + ", commentCount=" + commentCount
+				+ ", shareCount=" + shareCount + "]";
+	}
+	
 }

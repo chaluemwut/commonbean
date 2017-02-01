@@ -19,5 +19,8 @@ public class UserProfileMapping implements Serializable {
 	public void setContentCount(int contentCount) {
 		this.contentCount = contentCount;
 	}
-	
+	@Override
+	public String toString() {
+		return "UserProfileMapping [fullName=" + fullName + ", contentCount=" + contentCount + "]";
+	}
 }
