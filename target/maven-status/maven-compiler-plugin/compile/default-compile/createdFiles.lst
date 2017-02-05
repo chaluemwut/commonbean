@@ -1,8 +1,8 @@
-nsc/commonbean/myapp/setup/ServiceType.class
+nsc/commonbean/myapp/setup/ServiceTypeMapping.class
 nsc/commonbean/myapp/MemberMapping.class
 nsc/commonbean/myapp/ContentGroupMapping.class
 nsc/commonbean/myapp/usercontent/UserContentMapping.class
 nsc/commonbean/myapp/ContentMapping.class
+nsc/commonbean/myapp/setup/ProgramTypeMapping.class
 nsc/commonbean/myapp/usercontent/UserProfileMapping.class
-nsc/commonbean/myapp/setup/ProgramType.class
 nsc/commonbean/myapp/promo/PromotionMapping.class
