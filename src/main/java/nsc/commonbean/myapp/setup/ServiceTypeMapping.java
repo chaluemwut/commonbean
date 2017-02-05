@@ -3,8 +3,9 @@ package nsc.commonbean.myapp.setup;
 import java.io.Serializable;
 import java.util.Date;
 
-public class ProgramType implements Serializable{
-	private static final long serialVersionUID = -6704479712865622849L;
+public class ServiceTypeMapping implements Serializable {
+
+	private static final long serialVersionUID = -5313100726836903787L;
 
 	private int id;
 
@@ -45,6 +46,4 @@ public class ProgramType implements Serializable{
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
-	
-	
 }
