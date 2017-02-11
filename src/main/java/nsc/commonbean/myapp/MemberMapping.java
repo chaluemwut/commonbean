@@ -7,6 +7,7 @@ public class MemberMapping implements Serializable {
 	private int userId;
 	private int role;
 	private int companyId;
+	private String companyName;
 
 	public int getRole() {
 		return role;
@@ -31,5 +32,14 @@ public class MemberMapping implements Serializable {
 	public void setCompanyId(int companyId) {
 		this.companyId = companyId;
 	}
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
 
 }
