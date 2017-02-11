@@ -2,11 +2,11 @@ package nsc.commonbean.myapp;
 
 import java.io.Serializable;
 
-public class MemberMapping implements Serializable{
+public class MemberMapping implements Serializable {
 	private static final long serialVersionUID = -4416251441320316997L;
 	private int userId;
 	private int role;
-	private String companyId;
+	private int companyId;
 
 	public int getRole() {
 		return role;
@@ -24,11 +24,11 @@ public class MemberMapping implements Serializable{
 		this.userId = userId;
 	}
 
-	public String getCompanyId() {
+	public int getCompanyId() {
 		return companyId;
 	}
 
-	public void setCompanyId(String companyId) {
+	public void setCompanyId(int companyId) {
 		this.companyId = companyId;
 	}
 
