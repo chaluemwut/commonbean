@@ -1,6 +1,7 @@
 nsc/commonbean/myapp/ChatMapping.class
 nsc/commonbean/myapp/SetupMapping.class
 nsc/commonbean/myapp/MemberMapping.class
+nsc/commonbean/myapp/TinyCompanyMapping.class
 nsc/commonbean/myapp/ContentGroupMapping.class
 nsc/commonbean/myapp/usercontent/UserContentMapping.class
 nsc/commonbean/myapp/CompanyMapping.class
