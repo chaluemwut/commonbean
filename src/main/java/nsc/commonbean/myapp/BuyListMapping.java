@@ -8,6 +8,7 @@ public class BuyListMapping implements Serializable {
 	
 	private int id;
 	private String name;
+	private int buyListType;
 	private int itemCount;
 	private BigDecimal price;
 	
@@ -35,6 +36,11 @@ public class BuyListMapping implements Serializable {
 	public void setPrice(BigDecimal price) {
 		this.price = price;
 	}
-
+	public int getBuyListType() {
+		return buyListType;
+	}
+	public void setBuyListType(int buyListType) {
+		this.buyListType = buyListType;
+	}
 
 }
