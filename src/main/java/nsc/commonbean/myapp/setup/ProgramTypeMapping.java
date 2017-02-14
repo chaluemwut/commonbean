@@ -11,6 +11,7 @@ public class ProgramTypeMapping implements Serializable {
 	private int displayOrder;
 	private int activityType;	
 	private String detail;
+	private int requireLogin;
 	
 	public int getId() {
 		return id;
@@ -41,6 +42,12 @@ public class ProgramTypeMapping implements Serializable {
 	}
 	public void setDetail(String detail) {
 		this.detail = detail;
+	}
+	public int getRequireLogin() {
+		return requireLogin;
+	}
+	public void setRequireLogin(int requireLogin) {
+		this.requireLogin = requireLogin;
 	}
 
 }
