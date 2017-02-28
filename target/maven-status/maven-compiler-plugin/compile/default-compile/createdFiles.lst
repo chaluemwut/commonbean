@@ -8,6 +8,7 @@ nsc/commonbean/myapp/SetupMapping.class
 nsc/commonbean/myapp/BuyListMapping.class
 nsc/commonbean/myapp/TinyCompanyMapping.class
 nsc/commonbean/myapp/ContentGroupMapping.class
+nsc/commonbean/myapp/SellProcessMapping.class
 nsc/commonbean/myapp/usercontent/UserContentMapping.class
 nsc/commonbean/myapp/ContentMapping.class
 nsc/commonbean/myapp/setup/ProgramTypeMapping.class
