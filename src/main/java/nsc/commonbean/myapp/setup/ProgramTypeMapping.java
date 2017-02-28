@@ -12,6 +12,8 @@ public class ProgramTypeMapping implements Serializable {
 	private int activityType;	
 	private String detail;
 	private int requireLogin;
+	private int usageRole;
+	
 	
 	public int getId() {
 		return id;
@@ -48,6 +50,14 @@ public class ProgramTypeMapping implements Serializable {
 	}
 	public void setRequireLogin(int requireLogin) {
 		this.requireLogin = requireLogin;
+	}
+	
+	public int getUsageRole() {
+		return usageRole;
+	}
+
+	public void setUsageRole(int usageRole) {
+		this.usageRole = usageRole;
 	}
 
 }

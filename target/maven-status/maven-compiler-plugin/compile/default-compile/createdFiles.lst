@@ -1,12 +1,13 @@
+nsc/commonbean/myapp/MemberMapping.class
+nsc/commonbean/myapp/DataInfo.class
+nsc/commonbean/myapp/CompanyMapping.class
+nsc/commonbean/myapp/promo/PromotionMapping.class
 nsc/commonbean/myapp/ChatMapping.class
 nsc/commonbean/myapp/SetupMapping.class
 nsc/commonbean/myapp/BuyListMapping.class
-nsc/commonbean/myapp/MemberMapping.class
 nsc/commonbean/myapp/TinyCompanyMapping.class
 nsc/commonbean/myapp/ContentGroupMapping.class
 nsc/commonbean/myapp/usercontent/UserContentMapping.class
-nsc/commonbean/myapp/CompanyMapping.class
 nsc/commonbean/myapp/ContentMapping.class
 nsc/commonbean/myapp/setup/ProgramTypeMapping.class
 nsc/commonbean/myapp/usercontent/UserProfileMapping.class
-nsc/commonbean/myapp/promo/PromotionMapping.class

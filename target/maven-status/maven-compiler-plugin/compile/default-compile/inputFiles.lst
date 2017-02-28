@@ -1,12 +1,13 @@
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/BuyListMapping.java
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/ContentGroupMapping.java
-/Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/setup/ProgramTypeMapping.java
-/Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/ContentMapping.java
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/ChatMapping.java
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/SetupMapping.java
-/Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/MemberMapping.java
+/Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/DataInfo.java
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/CompanyMapping.java
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/promo/PromotionMapping.java
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/TinyCompanyMapping.java
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/usercontent/UserProfileMapping.java
 /Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/usercontent/UserContentMapping.java
+/Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/setup/ProgramTypeMapping.java
+/Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/ContentMapping.java
+/Users/chaluemwutnoyunsan/development/commonlib/commonbean/src/main/java/nsc/commonbean/myapp/MemberMapping.java
