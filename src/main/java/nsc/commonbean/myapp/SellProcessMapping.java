@@ -12,6 +12,8 @@ public class SellProcessMapping implements Serializable {
     private String phone;
     private String email;
     
+    private int status;
+    
     private List<CartMapping> cartList;
 
 	public String getFullName() {
@@ -69,5 +71,14 @@ public class SellProcessMapping implements Serializable {
 	public void setCartList(List<CartMapping> cartList) {
 		this.cartList = cartList;
 	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
 
 }
