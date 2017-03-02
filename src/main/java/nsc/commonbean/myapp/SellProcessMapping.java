@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 public class SellProcessMapping implements Serializable {
+	
 	private static final long serialVersionUID = -8279650033207817204L;	
     private String fullName;
     private String address;
@@ -11,6 +12,10 @@ public class SellProcessMapping implements Serializable {
     private String zip;
     private String phone;
     private String email;
+    
+    private String bankName;
+    private String bankAccountName;
+    private String bankAccountNumber;
     
     private int status;
     
@@ -80,5 +85,28 @@ public class SellProcessMapping implements Serializable {
 		this.status = status;
 	}
 
+	public String getBankName() {
+		return bankName;
+	}
+
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+
+	public String getBankAccountName() {
+		return bankAccountName;
+	}
+
+	public void setBankAccountName(String bankAccountName) {
+		this.bankAccountName = bankAccountName;
+	}
+
+	public String getBankAccountNumber() {
+		return bankAccountNumber;
+	}
+
+	public void setBankAccountNumber(String bankAccountNumber) {
+		this.bankAccountNumber = bankAccountNumber;
+	}
 
 }
