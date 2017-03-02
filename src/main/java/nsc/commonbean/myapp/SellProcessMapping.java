@@ -17,6 +17,8 @@ public class SellProcessMapping implements Serializable {
     private String bankAccountName;
     private String bankAccountNumber;
     
+    private int paymentMethod;
+    
     private int status;
     
     private List<CartMapping> cartList;
@@ -108,5 +110,14 @@ public class SellProcessMapping implements Serializable {
 	public void setBankAccountNumber(String bankAccountNumber) {
 		this.bankAccountNumber = bankAccountNumber;
 	}
+
+	public int getPaymentMethod() {
+		return paymentMethod;
+	}
+
+	public void setPaymentMethod(int paymentMethod) {
+		this.paymentMethod = paymentMethod;
+	}
+
 
 }
