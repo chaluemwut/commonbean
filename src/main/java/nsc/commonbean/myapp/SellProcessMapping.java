@@ -5,7 +5,8 @@ import java.util.List;
 
 public class SellProcessMapping implements Serializable {
 	
-	private static final long serialVersionUID = -8279650033207817204L;	
+	private static final long serialVersionUID = -8279650033207817204L;
+	private int id;
     private String fullName;
     private String address;
     private String province;
@@ -22,6 +23,14 @@ public class SellProcessMapping implements Serializable {
     private int status;
     
     private List<CartMapping> cartList;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getFullName() {
 		return fullName;
