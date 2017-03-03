@@ -1,11 +1,11 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
-import java.util.Set;
+import java.util.List;
 
 public class SellProcessMapping implements Serializable {
-	
 	private static final long serialVersionUID = -8279650033207817204L;
+	
 	private int id;
     private String fullName;
     private String address;
@@ -22,7 +22,7 @@ public class SellProcessMapping implements Serializable {
     
     private int status;
     
-    private Set<CartMapping> cartList;
+    private List<CartMapping> cartList;
 
 	public int getId() {
 		return id;
@@ -80,11 +80,11 @@ public class SellProcessMapping implements Serializable {
 		this.email = email;
 	}
 
-	public Set<CartMapping> getCartList() {
+	public List<CartMapping> getCartList() {
 		return cartList;
 	}
 
-	public void setCartList(Set<CartMapping> cartList) {
+	public void setCartList(List<CartMapping> cartList) {
 		this.cartList = cartList;
 	}
 
