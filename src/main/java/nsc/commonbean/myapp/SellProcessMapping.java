@@ -1,6 +1,7 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.List;
 
 public class SellProcessMapping implements Serializable {
@@ -18,7 +19,8 @@ public class SellProcessMapping implements Serializable {
     private String bankAccountName;
     private String bankAccountNumber;
     
-    private int paymentMethod;
+    private int paymentMethod;    
+    private BigDecimal deliveryFee;
     
     private int status;
     
@@ -126,6 +128,14 @@ public class SellProcessMapping implements Serializable {
 
 	public void setPaymentMethod(int paymentMethod) {
 		this.paymentMethod = paymentMethod;
+	}
+
+	public BigDecimal getDeliveryFee() {
+		return deliveryFee;
+	}
+
+	public void setDeliveryFee(BigDecimal deliveryFee) {
+		this.deliveryFee = deliveryFee;
 	}
 
 
