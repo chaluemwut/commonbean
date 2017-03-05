@@ -12,7 +12,7 @@ public class ContentMapping implements Serializable {
 	private BigDecimal price;
 	
 	private boolean suggest;
-	private boolean discount;
+	private int discount;
 	private boolean newProduct;
 	private boolean showToDashboard;	
 	
@@ -65,11 +65,11 @@ public class ContentMapping implements Serializable {
 		this.suggest = suggest;
 	}
 
-	public boolean getDiscount() {
+	public int getDiscount() {
 		return discount;
 	}
 
-	public void setDiscount(boolean discount) {
+	public void setDiscount(int discount) {
 		this.discount = discount;
 	}
 
