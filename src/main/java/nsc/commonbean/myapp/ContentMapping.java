@@ -11,10 +11,10 @@ public class ContentMapping implements Serializable {
 	private int numberOfImage;
 	private BigDecimal price;
 	
-	private int suggest;
-	private int discount;
-	private int newProduct;
-	private int showToDashboard;	
+	private boolean suggest;
+	private boolean discount;
+	private boolean newProduct;
+	private boolean showToDashboard;	
 	
 
 	public int getProductId() {
@@ -57,35 +57,35 @@ public class ContentMapping implements Serializable {
 		this.numberOfImage = numberOfImage;
 	}
 
-	public int getSuggest() {
+	public boolean getSuggest() {
 		return suggest;
 	}
 
-	public void setSuggest(int suggest) {
+	public void setSuggest(boolean suggest) {
 		this.suggest = suggest;
 	}
 
-	public int getDiscount() {
+	public boolean getDiscount() {
 		return discount;
 	}
 
-	public void setDiscount(int discount) {
+	public void setDiscount(boolean discount) {
 		this.discount = discount;
 	}
 
-	public int getNewProduct() {
+	public boolean getNewProduct() {
 		return newProduct;
 	}
 
-	public void setNewProduct(int newProduct) {
+	public void setNewProduct(boolean newProduct) {
 		this.newProduct = newProduct;
 	}
 
-	public int getShowToDashboard() {
+	public boolean getShowToDashboard() {
 		return showToDashboard;
 	}
 
-	public void setShowToDashboard(int showToDashboard) {
+	public void setShowToDashboard(boolean showToDashboard) {
 		this.showToDashboard = showToDashboard;
 	}
 
