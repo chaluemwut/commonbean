@@ -1,7 +1,6 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 public class ContentMapping implements Serializable {
 	private static final long serialVersionUID = -2820415613504501173L;
@@ -9,12 +8,10 @@ public class ContentMapping implements Serializable {
 	private String productName;
 	private String detail;
 	private int numberOfImage;
-	private BigDecimal price;
+	private int price;
 	
-	private boolean suggest;
-	private int discount;
-	private boolean newProduct;
-	private boolean showToDashboard;	
+	private int dashboardFlag;
+	private int discountPrice;
 	
 
 	public int getProductId() {
@@ -41,11 +38,11 @@ public class ContentMapping implements Serializable {
 		this.detail = detail;
 	}
 
-	public BigDecimal getPrice() {
+	public int getPrice() {
 		return price;
 	}
 
-	public void setPrice(BigDecimal price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 
@@ -57,37 +54,20 @@ public class ContentMapping implements Serializable {
 		this.numberOfImage = numberOfImage;
 	}
 
-	public boolean getSuggest() {
-		return suggest;
+	public int getDashboardFlag() {
+		return dashboardFlag;
 	}
 
-	public void setSuggest(boolean suggest) {
-		this.suggest = suggest;
+	public void setDashboardFlag(int dashboardFlag) {
+		this.dashboardFlag = dashboardFlag;
 	}
 
-	public int getDiscount() {
-		return discount;
+	public int getDiscountPrice() {
+		return discountPrice;
 	}
 
-	public void setDiscount(int discount) {
-		this.discount = discount;
+	public void setDiscountPrice(int discountPrice) {
+		this.discountPrice = discountPrice;
 	}
-
-	public boolean getNewProduct() {
-		return newProduct;
-	}
-
-	public void setNewProduct(boolean newProduct) {
-		this.newProduct = newProduct;
-	}
-
-	public boolean getShowToDashboard() {
-		return showToDashboard;
-	}
-
-	public void setShowToDashboard(boolean showToDashboard) {
-		this.showToDashboard = showToDashboard;
-	}
-
 
 }
