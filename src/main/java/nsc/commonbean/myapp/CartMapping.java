@@ -1,14 +1,13 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 public class CartMapping implements Serializable {
 	private static final long serialVersionUID = 6095518057173637022L;
 
 	private int productId;
 	private String productName;
-	private BigDecimal price;
+	private int price;
 	private int itemCount;
 
 	public int getProductId() {
@@ -27,11 +26,11 @@ public class CartMapping implements Serializable {
 		this.productName = productName;
 	}
 
-	public BigDecimal getPrice() {
+	public int getPrice() {
 		return price;
 	}
 
-	public void setPrice(BigDecimal price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 
