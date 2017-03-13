@@ -15,6 +15,10 @@ public class CompanyMapping implements Serializable{
 	private String latitude;
 	private String longitude;
 	
+	private boolean dashboardImage1;
+	private boolean dashboardImage2;
+	private boolean dashboardImage3;	
+	
 	public int getId() {
 		return id;
 	}
@@ -69,7 +73,22 @@ public class CompanyMapping implements Serializable{
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
-	
-	
-	
+	public boolean isDashboardImage1() {
+		return dashboardImage1;
+	}
+	public void setDashboardImage1(boolean dashboardImage1) {
+		this.dashboardImage1 = dashboardImage1;
+	}
+	public boolean isDashboardImage2() {
+		return dashboardImage2;
+	}
+	public void setDashboardImage2(boolean dashboardImage2) {
+		this.dashboardImage2 = dashboardImage2;
+	}
+	public boolean isDashboardImage3() {
+		return dashboardImage3;
+	}
+	public void setDashboardImage3(boolean dashboardImage3) {
+		this.dashboardImage3 = dashboardImage3;
+	}
 }
