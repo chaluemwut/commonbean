@@ -5,6 +5,7 @@ import java.util.Date;
 public class UserContentMapping {	
 	private int id;
 	private String fullUserName;
+	private String userName;
 	private String message;
 	private Date createDate;
 	private int likeCount;
@@ -53,12 +54,12 @@ public class UserContentMapping {
 	public void setFullUserName(String fullUserName) {
 		this.fullUserName = fullUserName;
 	}
-	
-	@Override
-	public String toString() {
-		return "UserContentMapping [id=" + id + ", fullUserName=" + fullUserName + ", message=" + message
-				+ ", createDate=" + createDate + ", likeCount=" + likeCount + ", commentCount=" + commentCount
-				+ ", shareCount=" + shareCount + "]";
-	}
-	
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 }
