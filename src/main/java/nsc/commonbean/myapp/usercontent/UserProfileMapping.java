@@ -4,8 +4,14 @@ import java.io.Serializable;
 
 public class UserProfileMapping implements Serializable {
 	private static final long serialVersionUID = -1967725592032357778L;
-	private String fullName;
+
+    private String fullName;
+	private String userName;
+	private String profileTitle;
+
+	private int friendCount;
 	private int contentCount;
+	private int favoriteCount;
 	
 	public String getFullName() {
 		return fullName;
@@ -19,8 +25,36 @@ public class UserProfileMapping implements Serializable {
 	public void setContentCount(int contentCount) {
 		this.contentCount = contentCount;
 	}
-	@Override
-	public String toString() {
-		return "UserProfileMapping [fullName=" + fullName + ", contentCount=" + contentCount + "]";
-	}
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getProfileTitle() {
+        return profileTitle;
+    }
+
+    public void setProfileTitle(String profileTitle) {
+        this.profileTitle = profileTitle;
+    }
+
+    public int getFriendCount() {
+        return friendCount;
+    }
+
+    public void setFriendCount(int friendCount) {
+        this.friendCount = friendCount;
+    }
+
+    public int getFavoriteCount() {
+        return favoriteCount;
+    }
+
+    public void setFavoriteCount(int favoriteCount) {
+        this.favoriteCount = favoriteCount;
+    }
 }
