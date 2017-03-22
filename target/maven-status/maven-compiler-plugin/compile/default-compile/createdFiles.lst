@@ -3,6 +3,7 @@ nsc/commonbean/myapp/DataInfo.class
 nsc/commonbean/myapp/CartAdminListMapping.class
 nsc/commonbean/myapp/CompanyMapping.class
 nsc/commonbean/myapp/promo/PromotionMapping.class
+nsc/commonbean/myapp/usercontent/FriendMapping.class
 nsc/commonbean/myapp/IdAndNameMapping.class
 nsc/commonbean/myapp/ChatMapping.class
 nsc/commonbean/myapp/CartMapping.class

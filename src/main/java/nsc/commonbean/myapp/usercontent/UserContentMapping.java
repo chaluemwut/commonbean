@@ -1,8 +1,9 @@
 package nsc.commonbean.myapp.usercontent;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class UserContentMapping {	
+public class UserContentMapping implements Serializable {
 	private int id;
 	private String fullUserName;
 	private String userName;

@@ -12,6 +12,7 @@ public class UserProfileMapping implements Serializable {
 	private int friendCount;
 	private int contentCount;
 	private int favoriteCount;
+	private int likeCount;
 	
 	public String getFullName() {
 		return fullName;
@@ -56,5 +57,13 @@ public class UserProfileMapping implements Serializable {
 
     public void setFavoriteCount(int favoriteCount) {
         this.favoriteCount = favoriteCount;
+    }
+
+    public int getLikeCount() {
+        return likeCount;
+    }
+
+    public void setLikeCount(int likeCount) {
+        this.likeCount = likeCount;
     }
 }
