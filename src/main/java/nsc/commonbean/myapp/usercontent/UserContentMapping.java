@@ -12,6 +12,10 @@ public class UserContentMapping implements Serializable {
 	private int likeCount;
 	private int commentCount;
 	private int shareCount;
+
+	private boolean isLikeToPost;
+	private boolean isCommentToPost;
+	private boolean isShareToPost;
 	
 	public int getId() {
 		return id;
@@ -63,4 +67,28 @@ public class UserContentMapping implements Serializable {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
+	public boolean isLikeToPost() {
+		return isLikeToPost;
+	}
+
+	public void setLikeToPost(boolean likeToPost) {
+		isLikeToPost = likeToPost;
+	}
+
+	public boolean isCommentToPost() {
+		return isCommentToPost;
+	}
+
+	public void setCommentToPost(boolean commentToPost) {
+		isCommentToPost = commentToPost;
+	}
+
+	public boolean isShareToPost() {
+		return isShareToPost;
+	}
+
+	public void setShareToPost(boolean shareToPost) {
+		isShareToPost = shareToPost;
+	}
 }
