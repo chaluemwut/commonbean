@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class ContentMapping implements Serializable {
 	private static final long serialVersionUID = -2820415613504501173L;
 	private int productId;
+	private int groupId;
 	private String productName;
 	private String detail;
 	private int numberOfImage;
@@ -70,4 +71,11 @@ public class ContentMapping implements Serializable {
 		this.discountPrice = discountPrice;
 	}
 
+	public int getGroupId() {
+		return groupId;
+	}
+
+	public void setGroupId(int groupId) {
+		this.groupId = groupId;
+	}
 }

@@ -2,11 +2,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">	<modelVersion>4.0.0</modelVersion>	
 	<groupId>commonbean</groupId>
 	<artifactId>commonbean</artifactId>
-	<version>0.0.52-SNAPSHOT</version>
+	<version>0.0.54-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>commonbean</name>
 	<url>http://maven.apache.org</url>
+
+	<scm>
+		<connection>scm:git:git@github.com:chaluemwut/commonbean.git</connection>
+		<developerConnection>scm:git:git@github.com:chaluemwut/commonbean.git</developerConnection>
+		<url>https://github.com/chaluemwut/commonbean.git</url>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,6 +27,48 @@
 		</dependency>
 	</dependencies>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>bintray-cy6ergn0m-maven</id>
+			<name>bintray-plugins</name>
+			<url>http://dl.bintray.com/cy6ergn0m/maven</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>cy.github</groupId>
+				<artifactId>github-release-plugin</artifactId>
+				<!--<version>${plugin.version}</version>-->
+
+				<configuration>
+					<tagName>${project.artifactId}-${project.version}</tagName>
+					<preRelease>true</preRelease>
+
+					<server>github</server>
+					<!-- The commit message -->
+					<message>Building site for my project</message>
+					<!-- The location where the site is uploaded -->
+					<!--<path>/Users/chaluemwutnoyunsan/apache-maven-3.3.9/conf/setting.xml</path>-->
+					<!-- Use merge or override the content -->
+					<merge>true</merge>
+				</configuration>
+
+				<executions>
+					<execution>
+						<goals>
+							<goal>gh-upload</goal>
+						</goals>
+						<phase>deploy</phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 <!-- 	<distributionManagement>
 		<snapshotRepository>
 			<id>snapshots</id>
