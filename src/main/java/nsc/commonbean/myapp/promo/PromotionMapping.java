@@ -11,6 +11,8 @@ public class PromotionMapping implements Serializable {
 	private int shareCount;
 	private Date createDate;
 	private boolean isUploadImage;
+	private boolean isLike;
+	private boolean isShare;
 	
 	public int getId() {
 		return id;
@@ -57,5 +59,21 @@ public class PromotionMapping implements Serializable {
 
 	public void setShareCount(int shareCount) {
 		this.shareCount = shareCount;
+	}
+
+	public boolean isLike() {
+		return isLike;
+	}
+
+	public void setLike(boolean like) {
+		isLike = like;
+	}
+
+	public boolean isShare() {
+		return isShare;
+	}
+
+	public void setShare(boolean share) {
+		isShare = share;
 	}
 }
