@@ -77,4 +77,18 @@ public class ContentMapping implements Serializable {
 	public void setGroupId(int groupId) {
 		this.groupId = groupId;
 	}
+
+	@Override
+	public String toString() {
+		return "ContentMapping{" +
+				"productId=" + productId +
+				", groupId=" + groupId +
+				", productName='" + productName + '\'' +
+				", detail='" + detail + '\'' +
+				", numberOfImage=" + numberOfImage +
+				", price=" + price +
+				", dashboardFlag=" + dashboardFlag +
+				", discountPrice=" + discountPrice +
+				'}';
+	}
 }
