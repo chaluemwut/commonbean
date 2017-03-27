@@ -3,8 +3,6 @@ package nsc.commonbean.myapp;
 import java.io.Serializable;
 
 public class CompanyMapping implements Serializable{
-	private static final long serialVersionUID = -3779198980894346762L;
-	
 	private int id;
 	private String companyName;
 	private String mobile;

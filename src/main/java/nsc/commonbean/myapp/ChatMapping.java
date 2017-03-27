@@ -4,8 +4,6 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class ChatMapping implements Serializable {
-	private static final long serialVersionUID = -6968470245243894069L;
-
 	private int id;
 	private String message;
 	private Date createDate;

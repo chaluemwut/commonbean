@@ -6,6 +6,8 @@ public class PromotionMapping {
 	private int id;
 	private String title;
 	private String message;
+	private int likeCount;
+	private int shareCount;
 	private Date createDate;
 	private boolean isUploadImage;
 	
@@ -40,4 +42,19 @@ public class PromotionMapping {
 		this.isUploadImage = isUploadImage;
 	}
 
+	public int getLikeCount() {
+		return likeCount;
+	}
+
+	public void setLikeCount(int likeCount) {
+		this.likeCount = likeCount;
+	}
+
+	public int getShareCount() {
+		return shareCount;
+	}
+
+	public void setShareCount(int shareCount) {
+		this.shareCount = shareCount;
+	}
 }

@@ -3,8 +3,6 @@ package nsc.commonbean.myapp;
 import java.io.Serializable;
 
 public class CartMapping implements Serializable {
-	private static final long serialVersionUID = 6095518057173637022L;
-
 	private int productId;
 	private String productName;
 	private int price;
