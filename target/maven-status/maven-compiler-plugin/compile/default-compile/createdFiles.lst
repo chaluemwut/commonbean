@@ -17,3 +17,4 @@ nsc/commonbean/myapp/usercontent/UserContentMapping.class
 nsc/commonbean/myapp/ContentMapping.class
 nsc/commonbean/myapp/setup/ProgramTypeMapping.class
 nsc/commonbean/myapp/usercontent/UserProfileMapping.class
+nsc/commonbean/myapp/FollowerUserMapping.class

@@ -3,7 +3,6 @@ package nsc.commonbean.myapp;
 import java.io.Serializable;
 
 public class ContentMapping implements Serializable {
-	private static final long serialVersionUID = -2820415613504501173L;
 	private int productId;
 	private int groupId;
 	private String productName;
