@@ -7,6 +7,7 @@ public class UserContentMapping implements Serializable {
 	private int id;
 	private String fullUserName;
 	private String userName;
+	private int userId;
 	private String message;
 	private Date createDate;
 	private boolean isUploadImage;
@@ -99,5 +100,13 @@ public class UserContentMapping implements Serializable {
 
 	public void setUploadImage(boolean uploadImage) {
 		isUploadImage = uploadImage;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 }
