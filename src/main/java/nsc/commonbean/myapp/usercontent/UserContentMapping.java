@@ -9,6 +9,7 @@ public class UserContentMapping implements Serializable {
 	private String userName;
 	private String message;
 	private Date createDate;
+	private boolean isUploadImage;
 	private int likeCount;
 	private int commentCount;
 	private int shareCount;
@@ -90,5 +91,13 @@ public class UserContentMapping implements Serializable {
 
 	public void setShareToPost(boolean shareToPost) {
 		isShareToPost = shareToPost;
+	}
+
+	public boolean isUploadImage() {
+		return isUploadImage;
+	}
+
+	public void setUploadImage(boolean uploadImage) {
+		isUploadImage = uploadImage;
 	}
 }
