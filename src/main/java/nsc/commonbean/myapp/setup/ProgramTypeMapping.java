@@ -4,8 +4,6 @@ import java.io.Serializable;
 
 
 public class ProgramTypeMapping implements Serializable {
-	private static final long serialVersionUID = -8494573407370122720L;
-	
 	private int id;
 	private String name;	
 	private int displayOrder;
@@ -13,6 +11,7 @@ public class ProgramTypeMapping implements Serializable {
 	private String detail;
 	private int requireLogin;
 	private int usageRole;
+	private boolean isShowAddButton;
 	
 	
 	public int getId() {
@@ -60,4 +59,11 @@ public class ProgramTypeMapping implements Serializable {
 		this.usageRole = usageRole;
 	}
 
+	public boolean isShowAddButton() {
+		return isShowAddButton;
+	}
+
+	public void setShowAddButton(boolean showAddButton) {
+		isShowAddButton = showAddButton;
+	}
 }
