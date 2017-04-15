@@ -14,6 +14,7 @@ public class UserContentMapping implements Serializable {
 	private int likeCount;
 	private int commentCount;
 	private int shareCount;
+	private String userLocale;
 
 	private boolean isLikeToPost;
 	private boolean isCommentToPost;
@@ -108,5 +109,13 @@ public class UserContentMapping implements Serializable {
 
 	public void setUserId(int userId) {
 		this.userId = userId;
+	}
+
+	public String getUserLocale() {
+		return userLocale;
+	}
+
+	public void setUserLocale(String userLocale) {
+		this.userLocale = userLocale;
 	}
 }
