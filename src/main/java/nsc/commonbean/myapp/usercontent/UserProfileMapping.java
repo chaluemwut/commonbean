@@ -8,6 +8,7 @@ public class UserProfileMapping implements Serializable {
     private String fullName;
 	private String userName;
 	private String profileTitle;
+    private String userLocale;
 
 	private int friendCount;
 	private int contentCount;
@@ -65,5 +66,13 @@ public class UserProfileMapping implements Serializable {
 
     public void setLikeCount(int likeCount) {
         this.likeCount = likeCount;
+    }
+
+    public String getUserLocale() {
+        return userLocale;
+    }
+
+    public void setUserLocale(String userLocale) {
+        this.userLocale = userLocale;
     }
 }
