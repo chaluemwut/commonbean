@@ -1,6 +1,7 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class CartAdminListMapping implements Serializable {
 	private static final long serialVersionUID = -8161422920229486411L;
@@ -8,6 +9,7 @@ public class CartAdminListMapping implements Serializable {
 	private int sellId;
 	private String buyerName;
 	private int sellStatus;
+	private Date createDate;
 	
 	public int getSellId() {
 		return sellId;
@@ -28,5 +30,11 @@ public class CartAdminListMapping implements Serializable {
 		this.sellStatus = sellStatus;
 	}
 	
-	
+	public Date getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
 }
