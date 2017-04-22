@@ -29,7 +29,7 @@ public class CartAdminListMapping implements Serializable {
 	public void setSellStatus(int sellStatus) {
 		this.sellStatus = sellStatus;
 	}
-	
+
 	public Date getCreateDate() {
 		return createDate;
 	}
