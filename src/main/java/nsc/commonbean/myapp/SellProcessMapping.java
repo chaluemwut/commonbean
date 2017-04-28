@@ -3,10 +3,9 @@ package nsc.commonbean.myapp;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Set;
 
 public class SellProcessMapping implements Serializable {
-	private static final long serialVersionUID = -8279650033207817204L;
-	
 	private int id;
     private String fullName;
     private String address;
@@ -24,7 +23,7 @@ public class SellProcessMapping implements Serializable {
     
     private int status;
     
-    private List<CartMapping> cartList;
+    private Set<CartMapping> cartList;
 
 	public int getId() {
 		return id;
@@ -82,11 +81,11 @@ public class SellProcessMapping implements Serializable {
 		this.email = email;
 	}
 
-	public List<CartMapping> getCartList() {
+	public Set<CartMapping> getCartList() {
 		return cartList;
 	}
 
-	public void setCartList(List<CartMapping> cartList) {
+	public void setCartList(Set<CartMapping> cartList) {
 		this.cartList = cartList;
 	}
 
