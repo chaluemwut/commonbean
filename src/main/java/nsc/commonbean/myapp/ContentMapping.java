@@ -1,6 +1,7 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
+import java.util.Set;
 
 public class ContentMapping implements Serializable {
 	private int productId;
@@ -12,6 +13,9 @@ public class ContentMapping implements Serializable {
 	
 	private int dashboardFlag;
 	private int discountPrice;
+
+	private String resourceId;
+	private Set<String> resourceIdSet;
 	
 
 	public int getProductId() {
@@ -78,17 +82,19 @@ public class ContentMapping implements Serializable {
 		this.groupId = groupId;
 	}
 
-	@Override
-	public String toString() {
-		return "ContentMapping{" +
-				"productId=" + productId +
-				", groupId=" + groupId +
-				", productName='" + productName + '\'' +
-				", detail='" + detail + '\'' +
-				", numberOfImage=" + numberOfImage +
-				", price=" + price +
-				", dashboardFlag=" + dashboardFlag +
-				", discountPrice=" + discountPrice +
-				'}';
+	public String getResourceId() {
+		return resourceId;
+	}
+
+	public void setResourceId(String resourceId) {
+		this.resourceId = resourceId;
+	}
+
+	public Set<String> getResourceIdSet() {
+		return resourceIdSet;
+	}
+
+	public void setResourceIdSet(Set<String> resourceIdSet) {
+		this.resourceIdSet = resourceIdSet;
 	}
 }
