@@ -9,7 +9,7 @@ import java.util.Date;
 public class FollowerUserMapping implements Serializable {
     private int id;
     private String fullName;
-    private boolean isUploadImage;
+    private String resourceId;
     private Date createDate;
 
     public int getId() {
@@ -28,12 +28,12 @@ public class FollowerUserMapping implements Serializable {
         this.fullName = fullName;
     }
 
-    public boolean isUploadImage() {
-        return isUploadImage;
+    public String getResourceId() {
+        return resourceId;
     }
 
-    public void setUploadImage(boolean uploadImage) {
-        isUploadImage = uploadImage;
+    public void setResourceId(String resourceId) {
+        this.resourceId = resourceId;
     }
 
     public Date getCreateDate() {
