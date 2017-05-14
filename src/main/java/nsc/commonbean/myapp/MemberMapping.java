@@ -9,6 +9,7 @@ public class MemberMapping implements Serializable {
 	private int companyId;
 	private String companyName;
 	private int companyPackage;
+	private String resourceId;
 
 	public int getRole() {
 		return role;
@@ -50,4 +51,11 @@ public class MemberMapping implements Serializable {
 		this.companyPackage = companyPackage;
 	}
 
+	public String getResourceId() {
+		return resourceId;
+	}
+
+	public void setResourceId(String resourceId) {
+		this.resourceId = resourceId;
+	}
 }
