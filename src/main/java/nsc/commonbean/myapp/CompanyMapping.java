@@ -17,6 +17,10 @@ public class CompanyMapping implements Serializable{
 	private boolean dashboardImage2;
 	private boolean dashboardImage3;
 
+	private String dashboardResourceId1;
+	private String dashboardResourceId2;
+	private String dashboardResourceId3;
+
 	private String resourceIdCompanyImage;
 	
 	public int getId() {
@@ -98,5 +102,29 @@ public class CompanyMapping implements Serializable{
 
 	public void setResourceIdCompanyImage(String resourceIdCompanyImage) {
 		this.resourceIdCompanyImage = resourceIdCompanyImage;
+	}
+
+	public String getDashboardResourceId1() {
+		return dashboardResourceId1;
+	}
+
+	public void setDashboardResourceId1(String dashboardResourceId1) {
+		this.dashboardResourceId1 = dashboardResourceId1;
+	}
+
+	public String getDashboardResourceId2() {
+		return dashboardResourceId2;
+	}
+
+	public void setDashboardResourceId2(String dashboardResourceId2) {
+		this.dashboardResourceId2 = dashboardResourceId2;
+	}
+
+	public String getDashboardResourceId3() {
+		return dashboardResourceId3;
+	}
+
+	public void setDashboardResourceId3(String dashboardResourceId3) {
+		this.dashboardResourceId3 = dashboardResourceId3;
 	}
 }
