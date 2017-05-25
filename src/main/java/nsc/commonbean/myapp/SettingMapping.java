@@ -2,11 +2,11 @@ package nsc.commonbean.myapp;
 
 import java.io.Serializable;
 
-public class UsageMapping implements Serializable {
+public class SettingMapping implements Serializable {
     private String dateExpire;
     private int usage;
     private int limit;
-    
+
     public String getDateExpire() {
         return dateExpire;
     }
