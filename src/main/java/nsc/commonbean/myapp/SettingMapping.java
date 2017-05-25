@@ -1,17 +1,18 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class SettingMapping implements Serializable {
-    private String dateExpire;
+    private Date dateExpire;
     private int usage;
     private int limit;
 
-    public String getDateExpire() {
+    public Date getDateExpire() {
         return dateExpire;
     }
 
-    public void setDateExpire(String dateExpire) {
+    public void setDateExpire(Date dateExpire) {
         this.dateExpire = dateExpire;
     }
 
