@@ -3,7 +3,6 @@ package nsc.commonbean.myapp;
 import java.io.Serializable;
 
 public class TinyCompanyMapping implements Serializable {
-	private static final long serialVersionUID = -5547862162554423430L;
 	private int id;
 	private String companyName;
 	
