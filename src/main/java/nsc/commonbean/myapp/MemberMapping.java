@@ -3,13 +3,14 @@ package nsc.commonbean.myapp;
 import java.io.Serializable;
 
 public class MemberMapping implements Serializable {
-	private static final long serialVersionUID = -4416251441320316997L;
 	private int userId;
 	private int role;
 	private int companyId;
 	private String companyName;
 	private int companyPackage;
 	private String resourceId;
+	private int themeId;
+
 
 	public int getRole() {
 		return role;
@@ -57,5 +58,13 @@ public class MemberMapping implements Serializable {
 
 	public void setResourceId(String resourceId) {
 		this.resourceId = resourceId;
+	}
+
+	public int getThemeId() {
+		return themeId;
+	}
+
+	public void setThemeId(int themeId) {
+		this.themeId = themeId;
 	}
 }
