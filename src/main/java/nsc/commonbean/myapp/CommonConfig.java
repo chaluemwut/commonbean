@@ -12,4 +12,7 @@ public class CommonConfig {
     public static final int ADMIN_USER_ROLE = 2;
     public static final int SUPER_USER_ROLE = 1;
 
+    public static final int CONTENT_TYPE_CUSTOMER = 0;
+    public static final int CONTENT_TYPE_NSC = 1;
+
 }

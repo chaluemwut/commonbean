@@ -3,12 +3,12 @@ package nsc.commonbean.myapp;
 import java.io.Serializable;
 
 public class ContentGroupMapping implements Serializable {
-	private static final long serialVersionUID = 4307386981022390472L;
 	
 	private int id;
 	private String name;
 	private String resourceId;
 	private long createDate;
+	private int contentGroupType;
 	
 	public int getId() {
 		return id;
@@ -33,5 +33,13 @@ public class ContentGroupMapping implements Serializable {
 	}
 	public void setResourceId(String resourceId) {
 		this.resourceId = resourceId;
+	}
+
+	public int getContentGroupType() {
+		return contentGroupType;
+	}
+
+	public void setContentGroupType(int contentGroupType) {
+		this.contentGroupType = contentGroupType;
 	}
 }
