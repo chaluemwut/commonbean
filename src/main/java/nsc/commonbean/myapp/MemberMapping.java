@@ -13,7 +13,7 @@ public class MemberMapping implements Serializable {
 	private String nextPlanTypeName;
 	private String resourceId;
 	private int themeId;
-
+	private String updateId;
 
 	public int getRole() {
 		return role;
@@ -93,6 +93,14 @@ public class MemberMapping implements Serializable {
 
 	public void setNextPlanTypeName(String nextPlanTypeName) {
 		this.nextPlanTypeName = nextPlanTypeName;
+	}
+
+	public String getUpdateId() {
+		return updateId;
+	}
+
+	public void setUpdateId(String updateId) {
+		this.updateId = updateId;
 	}
 	
 }
