@@ -12,8 +12,56 @@ public class CompanyMapping implements Serializable {
     private String instrgramURL;
     private String latitude;
     private String longitude;
+    
+    private int planTypeId;
+    private String planTypeName;
+    
+    private String androidPackageName;
+    
+    private int companyBuyStatusId;
+    private String companyBuyStatusName;
+    
+    public int getPlanTypeId() {
+		return planTypeId;
+	}
 
-    private String dashboardResourceId1;
+	public void setPlanTypeId(int planTypeId) {
+		this.planTypeId = planTypeId;
+	}
+
+	public String getPlanTypeName() {
+		return planTypeName;
+	}
+
+	public void setPlanTypeName(String planTypeName) {
+		this.planTypeName = planTypeName;
+	}
+
+	public String getAndroidPackageName() {
+		return androidPackageName;
+	}
+
+	public void setAndroidPackageName(String androidPackageName) {
+		this.androidPackageName = androidPackageName;
+	}
+
+	public int getCompanyBuyStatusId() {
+		return companyBuyStatusId;
+	}
+
+	public void setCompanyBuyStatusId(int companyBuyStatusId) {
+		this.companyBuyStatusId = companyBuyStatusId;
+	}
+
+	public String getCompanyBuyStatusName() {
+		return companyBuyStatusName;
+	}
+
+	public void setCompanyBuyStatusName(String companyBuyStatusName) {
+		this.companyBuyStatusName = companyBuyStatusName;
+	}
+
+	private String dashboardResourceId1;
     private String dashboardResourceId2;
     private String dashboardResourceId3;
 
