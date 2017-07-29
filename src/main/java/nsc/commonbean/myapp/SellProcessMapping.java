@@ -18,6 +18,12 @@ public class SellProcessMapping implements Serializable {
     private String bankAccountName;
     private String bankAccountNumber;
     
+    private String storeName;
+    private String storeAdminName;
+    private String storeAdminPassword;
+    private String adminAddress;
+    private String adminPhone;
+    
     private int paymentMethod;    
     private BigDecimal deliveryFee;
     
@@ -135,6 +141,46 @@ public class SellProcessMapping implements Serializable {
 
 	public void setDeliveryFee(BigDecimal deliveryFee) {
 		this.deliveryFee = deliveryFee;
+	}
+
+	public String getStoreName() {
+		return storeName;
+	}
+
+	public void setStoreName(String storeName) {
+		this.storeName = storeName;
+	}
+
+	public String getStoreAdminName() {
+		return storeAdminName;
+	}
+
+	public void setStoreAdminName(String storeAdminName) {
+		this.storeAdminName = storeAdminName;
+	}
+
+	public String getStoreAdminPassword() {
+		return storeAdminPassword;
+	}
+
+	public void setStoreAdminPassword(String storeAdminPassword) {
+		this.storeAdminPassword = storeAdminPassword;
+	}
+
+	public String getAdminAddress() {
+		return adminAddress;
+	}
+
+	public void setAdminAddress(String adminAddress) {
+		this.adminAddress = adminAddress;
+	}
+
+	public String getAdminPhone() {
+		return adminPhone;
+	}
+
+	public void setAdminPhone(String adminPhone) {
+		this.adminPhone = adminPhone;
 	}
 
 
