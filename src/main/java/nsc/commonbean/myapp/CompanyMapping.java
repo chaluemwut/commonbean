@@ -17,8 +17,9 @@ public class CompanyMapping implements Serializable {
     private String planTypeName;
     
     private String androidPackageName;
-    
-    private int companyBuyStatusId;
+    private String appstoreURL;   
+
+	private int companyBuyStatusId;
     private String companyBuyStatusName;
     
     public int getPlanTypeId() {
@@ -170,4 +171,12 @@ public class CompanyMapping implements Serializable {
     public void setDashboardResourceId3(String dashboardResourceId3) {
         this.dashboardResourceId3 = dashboardResourceId3;
     }
+    
+    public String getAppstoreURL() {
+		return appstoreURL;
+	}
+
+	public void setAppstoreURL(String appstoreURL) {
+		this.appstoreURL = appstoreURL;
+	}    
 }
