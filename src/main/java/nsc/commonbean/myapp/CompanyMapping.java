@@ -16,8 +16,9 @@ public class CompanyMapping implements Serializable {
     private int planTypeId;
     private String planTypeName;
     
+    private String appName;
     private String androidPackageName;
-    private String appstoreURL;   
+    private String appstoreURL;
 
 	private int companyBuyStatusId;
     private String companyBuyStatusName;
@@ -178,5 +179,14 @@ public class CompanyMapping implements Serializable {
 
 	public void setAppstoreURL(String appstoreURL) {
 		this.appstoreURL = appstoreURL;
-	}    
+	}
+
+	public String getAppName() {
+		return appName;
+	}
+
+	public void setAppName(String appName) {
+		this.appName = appName;
+	} 
+	
 }
