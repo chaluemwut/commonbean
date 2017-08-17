@@ -16,12 +16,13 @@ public class ContentMapping implements Serializable {
 	
 	private int dashboardFlag;
 	private int discountPrice;
-
+	
 	private String resourceId;
 	private Set<String> resourceIdSet;
 
 	private Date createDate;
 	
+	private String productUnit;
 
 	public int getProductId() {
 		return productId;
@@ -126,4 +127,13 @@ public class ContentMapping implements Serializable {
 	public void setContentType(int contentType) {
 		this.contentType = contentType;
 	}
+
+	public String getProductUnit() {
+		return productUnit;
+	}
+
+	public void setProductUnit(String productUnit) {
+		this.productUnit = productUnit;
+	}
+
 }
