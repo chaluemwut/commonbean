@@ -2,6 +2,7 @@ package nsc.commonbean.myapp;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class ContentMapping implements Serializable {
@@ -18,7 +19,7 @@ public class ContentMapping implements Serializable {
 	private int discountPrice;
 	
 	private String resourceId;
-	private Set<String> resourceIdSet;
+	private LinkedHashSet<String> resourceIdSet;
 
 	private Date createDate;
 	
@@ -96,14 +97,6 @@ public class ContentMapping implements Serializable {
 		this.resourceId = resourceId;
 	}
 
-	public Set<String> getResourceIdSet() {
-		return resourceIdSet;
-	}
-
-	public void setResourceIdSet(Set<String> resourceIdSet) {
-		this.resourceIdSet = resourceIdSet;
-	}
-
 	public int getNumberOfItem() {
 		return numberOfItem;
 	}
@@ -134,6 +127,14 @@ public class ContentMapping implements Serializable {
 
 	public void setProductUnit(String productUnit) {
 		this.productUnit = productUnit;
+	}
+
+	public LinkedHashSet<String> getResourceIdSet() {
+		return resourceIdSet;
+	}
+
+	public void setResourceIdSet(LinkedHashSet<String> resourceIdSet) {
+		this.resourceIdSet = resourceIdSet;
 	}
 
 }
