@@ -14,11 +14,13 @@ public class UserContentMapping implements Serializable {
 	private int likeCount;
 	private int commentCount;
 	private int shareCount;
-	private String userLocale;
+	private String userLocale;	
 
 	private boolean isLikeToPost;
 	private boolean isCommentToPost;
 	private boolean isShareToPost;
+	
+	private String contentResourceId;
 	
 	public int getId() {
 		return id;
@@ -118,4 +120,11 @@ public class UserContentMapping implements Serializable {
 	public void setUserLocale(String userLocale) {
 		this.userLocale = userLocale;
 	}
+	public String getContentResourceId() {
+		return contentResourceId;
+	}
+	public void setContentResourceId(String contentResourceId) {
+		this.contentResourceId = contentResourceId;
+	}
+	
 }
