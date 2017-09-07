@@ -8,6 +8,7 @@ public class ChatUserListMapping implements Serializable {
 	private String userName;
 	private String resourceId;
 	private Date createDate;
+	private int countUnRead;
 
 	public int getUserId() {
 		return userId;
@@ -40,5 +41,14 @@ public class ChatUserListMapping implements Serializable {
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
+
+	public int getCountUnRead() {
+		return countUnRead;
+	}
+
+	public void setCountUnRead(int countUnRead) {
+		this.countUnRead = countUnRead;
+	}
+	
 
 }
