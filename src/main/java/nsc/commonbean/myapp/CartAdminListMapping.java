@@ -8,6 +8,7 @@ public class CartAdminListMapping implements Serializable {
 
 	private int sellId;
 	private String buyerName;
+	private String productName;
 	private int sellStatus;
 	private Date createDate;
 	
@@ -37,4 +38,11 @@ public class CartAdminListMapping implements Serializable {
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
+	public String getProductName() {
+		return productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+	
 }
