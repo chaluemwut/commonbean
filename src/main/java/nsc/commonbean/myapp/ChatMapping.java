@@ -6,6 +6,7 @@ import java.util.Date;
 public class ChatMapping implements Serializable {
 	private int id;
 	private String message;
+	private String resourceId;
 	private Date createDate;
 	private String userName;
 	private int userChatId;
@@ -49,4 +50,13 @@ public class ChatMapping implements Serializable {
 	public void setUserChatId(int userChatId) {
 		this.userChatId = userChatId;
 	}
+
+	public String getResourceId() {
+		return resourceId;
+	}
+
+	public void setResourceId(String resourceId) {
+		this.resourceId = resourceId;
+	}
+	
 }
