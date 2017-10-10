@@ -28,6 +28,8 @@ public class SellProcessMapping implements Serializable {
     private BigDecimal deliveryFee;
     
     private int status;
+
+    private String billResourceId;
     
     private Set<CartMapping> cartList;
 
@@ -183,5 +185,11 @@ public class SellProcessMapping implements Serializable {
 		this.adminPhone = adminPhone;
 	}
 
+    public String getBillResourceId() {
+        return billResourceId;
+    }
 
+    public void setBillResourceId(String billResourceId) {
+        this.billResourceId = billResourceId;
+    }
 }
