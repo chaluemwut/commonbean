@@ -25,7 +25,7 @@ public class SellProcessMapping implements Serializable {
     private String adminPhone;
     
     private int paymentMethod;    
-    private BigDecimal deliveryFee;
+    private int deliveryFee;
     
     private int status;
 
@@ -137,11 +137,11 @@ public class SellProcessMapping implements Serializable {
 		this.paymentMethod = paymentMethod;
 	}
 
-	public BigDecimal getDeliveryFee() {
+	public int getDeliveryFee() {
 		return deliveryFee;
 	}
 
-	public void setDeliveryFee(BigDecimal deliveryFee) {
+	public void setDeliveryFee(int deliveryFee) {
 		this.deliveryFee = deliveryFee;
 	}
 
