@@ -7,7 +7,9 @@ public enum SellStatusEnumMapping {
     SHIPMENT(4, "shipment"),
     FINISH(5, "finish"),
     USER_CANCEL(6, "user_cancel"),
-    ADMIN_CANCEL(7,"admin_cancel");
+    ADMIN_CANCEL_WAITING_SELLER(7,"admin_cancel_wating_seller"),
+    ADMIN_CANCEL_PAYMENT(8, "admin_cancel_payment"),
+    ADMIN_CANCEL_SHIPMENT(9, "admin_cancel_shipment");
 
     private int statusId;
     private String statusName;
@@ -40,7 +42,11 @@ public enum SellStatusEnumMapping {
             case 6:
                 return USER_CANCEL;
             case 7:
-                return ADMIN_CANCEL;
+                return ADMIN_CANCEL_WAITING_SELLER;
+            case 8:
+                return ADMIN_CANCEL_PAYMENT;
+            case 9:
+                return ADMIN_CANCEL_SHIPMENT;
             default:
                 return FILL_USER_DETAIL;
         }
