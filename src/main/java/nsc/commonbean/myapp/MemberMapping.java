@@ -14,6 +14,7 @@ public class MemberMapping implements Serializable {
 	private String resourceId;
 	private int themeId;
 	private String updateId;
+	private String lang;
 
 	public int getRole() {
 		return role;
@@ -102,5 +103,12 @@ public class MemberMapping implements Serializable {
 	public void setUpdateId(String updateId) {
 		this.updateId = updateId;
 	}
-	
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
 }
