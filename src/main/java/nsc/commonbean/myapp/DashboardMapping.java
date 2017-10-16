@@ -76,25 +76,4 @@ public class DashboardMapping implements Serializable, Comparable {
                 '}';
     }
 
-    public static void main(String [] args){
-        DashboardMapping d1 = new DashboardMapping();
-        d1.setCreateDate(new Date());
-        d1.setDashBoardType(1);
-
-        DashboardMapping d2 = new DashboardMapping();
-        int x = -10;
-        Calendar cal = GregorianCalendar.getInstance();
-        cal.add( Calendar.DAY_OF_YEAR, x);
-        Date tenDaysAgo = cal.getTime();
-        d2.setCreateDate(tenDaysAgo);
-        d2.setDashBoardType(2);
-
-        List<DashboardMapping> lst = new ArrayList<>();
-        lst.add(d1);
-        lst.add(d2);
-        System.out.println(lst);
-        Collections.sort(lst);
-        System.out.println(lst);
-    }
-
 }
