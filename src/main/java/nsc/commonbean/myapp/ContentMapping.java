@@ -25,6 +25,8 @@ public class ContentMapping implements Serializable {
 	
 	private String productUnit;
 
+	private String posterFullName;
+
 	public int getProductId() {
 		return productId;
 	}
@@ -137,4 +139,11 @@ public class ContentMapping implements Serializable {
 		this.resourceIdSet = resourceIdSet;
 	}
 
+    public String getPosterFullName() {
+        return posterFullName;
+    }
+
+    public void setPosterFullName(String posterFullName) {
+        this.posterFullName = posterFullName;
+    }
 }
