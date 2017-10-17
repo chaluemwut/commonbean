@@ -13,6 +13,8 @@ public class PromotionMapping implements Serializable {
 	private boolean isUploadImage;
 	private boolean isLike;
 	private boolean isShare;
+    private String posterFullName;
+    private String posterResourceId;
 	
 	public int getId() {
 		return id;
@@ -76,4 +78,20 @@ public class PromotionMapping implements Serializable {
 	public void setShare(boolean share) {
 		isShare = share;
 	}
+
+    public String getPosterFullName() {
+        return posterFullName;
+    }
+
+    public void setPosterFullName(String posterFullName) {
+        this.posterFullName = posterFullName;
+    }
+
+    public String getPosterResourceId() {
+        return posterResourceId;
+    }
+
+    public void setPosterResourceId(String posterResourceId) {
+        this.posterResourceId = posterResourceId;
+    }
 }
