@@ -10,7 +10,7 @@ public class PromotionMapping implements Serializable {
 	private int likeCount;
 	private int shareCount;
 	private Date createDate;
-	private boolean isUploadImage;
+	private String resourceId;
 	private boolean isLike;
 	private boolean isShare;
     private String posterFullName;
@@ -39,12 +39,6 @@ public class PromotionMapping implements Serializable {
 	}
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
-	}
-	public boolean isUploadImage() {
-		return isUploadImage;
-	}
-	public void setUploadImage(boolean isUploadImage) {
-		this.isUploadImage = isUploadImage;
 	}
 
 	public int getLikeCount() {
@@ -93,5 +87,13 @@ public class PromotionMapping implements Serializable {
 
     public void setPosterResourceId(String posterResourceId) {
         this.posterResourceId = posterResourceId;
+    }
+
+    public String getResourceId() {
+        return resourceId;
+    }
+
+    public void setResourceId(String resourceId) {
+        this.resourceId = resourceId;
     }
 }
