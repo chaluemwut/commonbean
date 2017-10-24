@@ -22,7 +22,14 @@ public class CompanyMapping implements Serializable {
 
 	private int companyBuyStatusId;
     private String companyBuyStatusName;
-    
+
+    private String dashboardResourceId1;
+    private String dashboardResourceId2;
+    private String dashboardResourceId3;
+
+    private String contactCompanyImageResourceId;
+    private String splashResourceId;
+
     public int getPlanTypeId() {
 		return planTypeId;
 	}
@@ -62,12 +69,6 @@ public class CompanyMapping implements Serializable {
 	public void setCompanyBuyStatusName(String companyBuyStatusName) {
 		this.companyBuyStatusName = companyBuyStatusName;
 	}
-
-	private String dashboardResourceId1;
-    private String dashboardResourceId2;
-    private String dashboardResourceId3;
-
-    private String resourceIdCompanyImage;
 
     public int getId() {
         return id;
@@ -141,14 +142,6 @@ public class CompanyMapping implements Serializable {
         this.longitude = longitude;
     }
 
-    public String getResourceIdCompanyImage() {
-        return resourceIdCompanyImage;
-    }
-
-    public void setResourceIdCompanyImage(String resourceIdCompanyImage) {
-        this.resourceIdCompanyImage = resourceIdCompanyImage;
-    }
-
     public String getDashboardResourceId1() {
         return dashboardResourceId1;
     }
@@ -187,6 +180,21 @@ public class CompanyMapping implements Serializable {
 
 	public void setAppName(String appName) {
 		this.appName = appName;
-	} 
-	
+	}
+
+    public String getContactCompanyImageResourceId() {
+        return contactCompanyImageResourceId;
+    }
+
+    public void setContactCompanyImageResourceId(String contactCompanyImageResourceId) {
+        this.contactCompanyImageResourceId = contactCompanyImageResourceId;
+    }
+
+    public String getSplashResourceId() {
+        return splashResourceId;
+    }
+
+    public void setSplashResourceId(String splashResourceId) {
+        this.splashResourceId = splashResourceId;
+    }
 }
