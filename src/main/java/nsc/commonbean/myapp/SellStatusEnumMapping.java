@@ -1,22 +1,27 @@
 package nsc.commonbean.myapp;
 
 public enum SellStatusEnumMapping {
-    FILL_USER_DETAIL(1, "fill_user_detail"),
-    WAITING_SELLER(2, "waiting_seller"),
-    PAYMENT(3, "payment"),
-    SHIPMENT(4, "shipment"),
-    FINISH(5, "finish"),
-    USER_CANCEL(6, "user_cancel"),
-    ADMIN_CANCEL_WAITING_SELLER(7,"admin_cancel_wating_seller"),
-    ADMIN_CANCEL_PAYMENT(8, "admin_cancel_payment"),
-    ADMIN_CANCEL_SHIPMENT(9, "admin_cancel_shipment");
+
+    FILL_USER_DETAIL(1, "fill_user_detail", "Fill seller detail", "รายละเอียด"),
+    WAITING_SELLER(2, "waiting_seller","Waiting seller", "รอผู้ขาย"),
+    PAYMENT(3, "payment", "Payment", "จ่ายเงิน"),
+    SHIPMENT(4, "shipment", "Shipment", "ส่งของ"),
+    FINISH(5, "finish", "Finish", "เสร็จ"),
+    USER_CANCEL(6, "user_cancel", "User cancel", "ผู้ซื้อยกเลิก"),
+    ADMIN_CANCEL_WAITING_SELLER(7,"admin_cancel_wating_seller", "Admin cancel", "ผู้ขายยกเลิก"),
+    ADMIN_CANCEL_PAYMENT(8, "admin_cancel_payment", "Admin cancel", "ผู้ขายยกเลิก"),
+    ADMIN_CANCEL_SHIPMENT(9, "admin_cancel_shipment", "Admin cancel", "ผู้ขายยกเลิก");
 
     private int statusId;
     private String statusName;
+    private String enDesc;
+    private String thDesc;
 
-    SellStatusEnumMapping(int statusId, String statusName) {
+    SellStatusEnumMapping(int statusId, String statusName, String enDesc, String thDesc) {
         this.statusId = statusId;
         this.statusName = statusName;
+        this.enDesc = enDesc;
+        this.thDesc = thDesc;
     }
 
     public int getStatusId() {
@@ -50,5 +55,24 @@ public enum SellStatusEnumMapping {
             default:
                 return FILL_USER_DETAIL;
         }
+    }
+
+    public static SellStatusEnumMapping getByDesc(String desc){
+        if("Fill seller detail".equals(desc) || "รายละเอียด".equals(desc)){
+            return FILL_USER_DETAIL;
+        } else if ("Waiting seller".equals(desc) || "รอผู้ขาย".equals(desc)){
+            return WAITING_SELLER;
+        } else if ("Payment".equals(desc) || "จ่ายเงิน".equals(desc)){
+            return  PAYMENT;
+        } else if ("Shipment".equals(desc) || "ส่งของ".equals(desc)) {
+            return SHIPMENT;
+        } else if ("Finish".equals(desc) || "เสร็จ".equals(desc)) {
+            return FINISH;
+        } else if ("User cancel".equals(desc) || "ผู้ซื้อยกเลิก".equals(desc)) {
+            return USER_CANCEL;
+        } else if ("Admin cancel".equals(desc) || "ผู้ขายยกเลิก".equals(desc)) {
+            return ADMIN_CANCEL_WAITING_SELLER;
+        }
+        return null;
     }
 }
