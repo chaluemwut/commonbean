@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.*;
 
-public class DashboardMapping implements Serializable, Comparable {
+public class DashboardMapping implements Serializable {
     private int dashBoardType;
     private UserContentMapping userContentMapping;
     private ContentMapping contentMapping;
@@ -53,27 +53,27 @@ public class DashboardMapping implements Serializable, Comparable {
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
-
-    public int compareTo(Object o) {
-        DashboardMapping otherObj = (DashboardMapping)o;
-        if(this.getCreateDate().equals(otherObj.getCreateDate())){
-            return 0;
-        } else if (this.getCreateDate().after(otherObj.getCreateDate())) {
-            return -1;
-        } else {
-            return 1;
-        }
-    }
-
-    @Override
-    public String toString() {
-        return "DashboardMapping{" +
-                "dashBoardType=" + dashBoardType +
-                ", userContentMapping=" + userContentMapping +
-                ", contentMapping=" + contentMapping +
-                ", promotionMapping=" + promotionMapping +
-                ", createDate=" + createDate +
-                '}';
-    }
+//
+//    public int compareTo(Object o) {
+//        DashboardMapping otherObj = (DashboardMapping)o;
+//        if(this.getCreateDate().equals(otherObj.getCreateDate())){
+//            return 0;
+//        } else if (this.getCreateDate().after(otherObj.getCreateDate())) {
+//            return -1;
+//        } else {
+//            return 1;
+//        }
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "DashboardMapping{" +
+//                "dashBoardType=" + dashBoardType +
+//                ", userContentMapping=" + userContentMapping +
+//                ", contentMapping=" + contentMapping +
+//                ", promotionMapping=" + promotionMapping +
+//                ", createDate=" + createDate +
+//                '}';
+//    }
 
 }
