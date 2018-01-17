@@ -58,19 +58,19 @@ public enum SellStatusEnumMapping {
     }
 
     public static SellStatusEnumMapping getByDesc(String desc){
-        if("Fill seller detail".equals(desc) || "รายละเอียด".equals(desc)){
+        if("Fill seller detail".equalsIgnoreCase(desc) || "รายละเอียด".equals(desc)){
             return FILL_USER_DETAIL;
-        } else if ("Waiting seller".equals(desc) || "รอผู้ขาย".equals(desc)){
+        } else if ("Waiting seller".equalsIgnoreCase(desc) || "รอผู้ขาย".equals(desc)){
             return WAITING_SELLER;
-        } else if ("Payment".equals(desc) || "จ่ายเงิน".equals(desc)){
+        } else if ("Payment".equalsIgnoreCase(desc) || "จ่ายเงิน".equals(desc)){
             return  PAYMENT;
-        } else if ("Shipment".equals(desc) || "ส่งของ".equals(desc)) {
+        } else if ("Shipment".equalsIgnoreCase(desc) || "ส่งของ".equals(desc)) {
             return SHIPMENT;
-        } else if ("Finish".equals(desc) || "เสร็จ".equals(desc)) {
+        } else if ("Finish".equalsIgnoreCase(desc) || "เสร็จ".equals(desc)) {
             return FINISH;
-        } else if ("User cancel".equals(desc) || "ผู้ซื้อยกเลิก".equals(desc)) {
+        } else if ("User cancel".equalsIgnoreCase(desc) || "ผู้ซื้อยกเลิก".equals(desc)) {
             return USER_CANCEL;
-        } else if ("Admin cancel".equals(desc) || "ผู้ขายยกเลิก".equals(desc)) {
+        } else if ("Admin cancel".equalsIgnoreCase(desc) || "ผู้ขายยกเลิก".equals(desc)) {
             return ADMIN_CANCEL_WAITING_SELLER;
         }
         return null;
