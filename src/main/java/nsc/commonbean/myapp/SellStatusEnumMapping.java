@@ -2,15 +2,15 @@ package nsc.commonbean.myapp;
 
 public enum SellStatusEnumMapping {
 
-    FILL_USER_DETAIL(1, "fill_user_detail", "Fill seller detail", "รายละเอียด"),
-    WAITING_SELLER(2, "waiting_seller","Waiting seller", "รอผู้ขาย"),
-    PAYMENT(3, "payment", "Payment", "จ่ายเงิน"),
-    SHIPMENT(4, "shipment", "Shipment", "ส่งของ"),
-    FINISH(5, "finish", "Finish", "เสร็จ"),
-    USER_CANCEL(6, "user_cancel", "User cancel", "ผู้ซื้อยกเลิก"),
-    ADMIN_CANCEL_WAITING_SELLER(7,"admin_cancel_wating_seller", "Admin cancel", "ผู้ขายยกเลิก"),
-    ADMIN_CANCEL_PAYMENT(8, "admin_cancel_payment", "Admin cancel", "ผู้ขายยกเลิก"),
-    ADMIN_CANCEL_SHIPMENT(9, "admin_cancel_shipment", "Admin cancel", "ผู้ขายยกเลิก");
+    FILL_USER_DETAIL(1, "fill_user_detail", "fill seller detail", "รายละเอียด"),
+    WAITING_SELLER(2, "waiting_seller","waiting seller", "รอผู้ขาย"),
+    PAYMENT(3, "payment", "payment", "จ่ายเงิน"),
+    SHIPMENT(4, "shipment", "shipment", "ส่งของ"),
+    FINISH(5, "finish", "finish", "เสร็จ"),
+    USER_CANCEL(6, "user_cancel", "user cancel", "ผู้ซื้อยกเลิก"),
+    ADMIN_CANCEL_WAITING_SELLER(7,"admin_cancel_wating_seller", "admin cancel", "ผู้ขายยกเลิก"),
+    ADMIN_CANCEL_PAYMENT(8, "admin_cancel_payment", "admin cancel", "ผู้ขายยกเลิก"),
+    ADMIN_CANCEL_SHIPMENT(9, "admin_cancel_shipment", "admin cancel", "ผู้ขายยกเลิก");
 
     private int statusId;
     private String statusName;
