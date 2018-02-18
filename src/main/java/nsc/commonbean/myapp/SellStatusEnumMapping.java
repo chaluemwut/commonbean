@@ -32,6 +32,14 @@ public enum SellStatusEnumMapping {
         return statusName;
     }
 
+    public String getEnDesc(){
+        return enDesc;
+    }
+
+    public String getThDesc(){
+        return thDesc;
+    }
+
     public static SellStatusEnumMapping getById(int sellId) {
         switch (sellId) {
             case 1:
