@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class SellProcessMapping implements Serializable {
 	private int id;
+	private String buyerLoginName;
     private String fullName;
     private String address;
     private String province;
@@ -192,4 +193,12 @@ public class SellProcessMapping implements Serializable {
     public void setBillResourceId(String billResourceId) {
         this.billResourceId = billResourceId;
     }
+
+	public String getBuyerLoginName() {
+		return buyerLoginName;
+	}
+
+	public void setBuyerLoginName(String buyerLoginName) {
+		this.buyerLoginName = buyerLoginName;
+	}
 }
