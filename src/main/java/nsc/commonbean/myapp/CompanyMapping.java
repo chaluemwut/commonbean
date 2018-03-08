@@ -22,6 +22,9 @@ public class CompanyMapping implements Serializable {
 
 	private int companyBuyStatusId;
     private String companyBuyStatusName;
+    private int companyPackageId;
+    private String companyPackageName;
+
 
     private String dashboardResourceId1;
     private String dashboardResourceId2;
@@ -196,5 +199,21 @@ public class CompanyMapping implements Serializable {
 
     public void setSplashResourceId(String splashResourceId) {
         this.splashResourceId = splashResourceId;
+    }
+
+    public int getCompanyPackageId() {
+        return companyPackageId;
+    }
+
+    public void setCompanyPackageId(int companyPackageId) {
+        this.companyPackageId = companyPackageId;
+    }
+
+    public String getCompanyPackageName() {
+        return companyPackageName;
+    }
+
+    public void setCompanyPackageName(String companyPackageName) {
+        this.companyPackageName = companyPackageName;
     }
 }
