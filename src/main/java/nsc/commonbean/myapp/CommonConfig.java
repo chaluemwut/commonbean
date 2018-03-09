@@ -17,4 +17,9 @@ public class CommonConfig {
 
     public static final int APP_NESTSTARTUP_ID = 1;
 
+    public static final int BUYSTATUS_START = 1;
+    public static final int BUYSTATUS_PREPARE = 2;
+    public static final int BUYSTATUS_DONE = 3;
+    public static final int BUYSTATUS_UPDATE_ICON = 4;
+
 }
