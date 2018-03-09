@@ -15,6 +15,6 @@ public class CommonConfig {
     public static final int CONTENT_TYPE_CUSTOMER = 0;
     public static final int CONTENT_TYPE_NSC = 1;
 
-    public static final int NESTSTARTUP_CONTENT_ID = 1;
+    public static final int APP_NESTSTARTUP_ID = 1;
 
 }
