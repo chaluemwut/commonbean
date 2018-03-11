@@ -8,7 +8,7 @@ public class UICompanyListMapping implements Serializable {
     private String packageName;
     private String buyStatus;
     private int diskUsage;
-    private int remanderDay;
+    private int dayUsage;
 
     public int getId() {
         return id;
@@ -50,11 +50,11 @@ public class UICompanyListMapping implements Serializable {
         this.diskUsage = diskUsage;
     }
 
-    public int getRemanderDay() {
-        return remanderDay;
+    public int getDayUsage() {
+        return dayUsage;
     }
 
-    public void setRemanderDay(int remanderDay) {
-        this.remanderDay = remanderDay;
+    public void setDayUsage(int dayUsage) {
+        this.dayUsage = dayUsage;
     }
 }
