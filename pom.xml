@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>commonbean</groupId>
     <artifactId>commonbean</artifactId>
-    <version>0.0.138</version>
+    <version>0.0.139</version>
     <packaging>jar</packaging>
 
     <name>commonbean</name>

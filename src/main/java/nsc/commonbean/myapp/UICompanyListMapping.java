@@ -1,6 +1,7 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class UICompanyListMapping implements Serializable {
     private int id;
@@ -9,6 +10,7 @@ public class UICompanyListMapping implements Serializable {
     private String buyStatus;
     private int diskUsage;
     private int dayUsage;
+    private Date expireDate;
 
     public int getId() {
         return id;
@@ -56,5 +58,13 @@ public class UICompanyListMapping implements Serializable {
 
     public void setDayUsage(int dayUsage) {
         this.dayUsage = dayUsage;
+    }
+
+    public Date getExpireDate() {
+        return expireDate;
+    }
+
+    public void setExpireDate(Date expireDate) {
+        this.expireDate = expireDate;
     }
 }
