@@ -2,7 +2,7 @@ package nsc.commonbean.myapp;
 
 import java.io.Serializable;
 
-public enum DashBoardType implements Serializable{
+public enum DashBoardType {
     SPECIAL(1),
     USER(2),
     OTHER(3),
