@@ -10,8 +10,8 @@ public class Chat2Mapping implements Serializable {
     private Date createDate;
     private String userName;
     private int userId;
-    private String companyAdminUserName;
-    private int companyAdminUserId;
+    private String companyName;
+    private Integer companyAdminId;
     private int chatType;
 
     public int getId() {
@@ -62,20 +62,20 @@ public class Chat2Mapping implements Serializable {
         this.userId = userId;
     }
 
-    public String getCompanyAdminUserName() {
-        return companyAdminUserName;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setCompanyAdminUserName(String companyAdminUserName) {
-        this.companyAdminUserName = companyAdminUserName;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
-    public int getCompanyAdminUserId() {
-        return companyAdminUserId;
+    public Integer getCompanyAdminId() {
+        return companyAdminId;
     }
 
-    public void setCompanyAdminUserId(int companyAdminUserId) {
-        this.companyAdminUserId = companyAdminUserId;
+    public void setCompanyAdminId(Integer companyAdminId) {
+        this.companyAdminId = companyAdminId;
     }
 
     public int getChatType() {
