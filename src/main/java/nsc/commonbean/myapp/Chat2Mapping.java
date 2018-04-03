@@ -1,51 +1,79 @@
 package nsc.commonbean.myapp;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class Chat2Mapping implements Serializable {
-    private int productId;
-    private String productName;
-    private int price;
-    private int itemCount;
-    private int chatType;
+    private int id;
+    private String message;
+    private String resourceId;
+    private Date createDate;
+    private String userName;
+    private int userId;
+    private String companyAdminUserName;
+    private int companyAdminUserId;
 
-    public int getProductId() {
-        return productId;
+    public int getId() {
+        return id;
     }
 
-    public void setProductId(int productId) {
-        this.productId = productId;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getProductName() {
-        return productName;
+    public String getMessage() {
+        return message;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
-    public int getPrice() {
-        return price;
+    public String getResourceId() {
+        return resourceId;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setResourceId(String resourceId) {
+        this.resourceId = resourceId;
     }
 
-    public int getItemCount() {
-        return itemCount;
+    public Date getCreateDate() {
+        return createDate;
     }
 
-    public void setItemCount(int itemCount) {
-        this.itemCount = itemCount;
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 
-    public int getChatType() {
-        return chatType;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setChatType(int chatType) {
-        this.chatType = chatType;
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public String getCompanyAdminUserName() {
+        return companyAdminUserName;
+    }
+
+    public void setCompanyAdminUserName(String companyAdminUserName) {
+        this.companyAdminUserName = companyAdminUserName;
+    }
+
+    public int getCompanyAdminUserId() {
+        return companyAdminUserId;
+    }
+
+    public void setCompanyAdminUserId(int companyAdminUserId) {
+        this.companyAdminUserId = companyAdminUserId;
     }
 }
