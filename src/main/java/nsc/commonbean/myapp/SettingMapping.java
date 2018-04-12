@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class SettingMapping implements Serializable {
-    private int buyStatus;
-    private String buyStatusName;
+    private int buyStatusId;
+    private int planTypeId;
     private Date dateExpire;
     private int usage;
     private int limit;
@@ -34,19 +34,19 @@ public class SettingMapping implements Serializable {
         this.limit = limit;
     }
 
-    public int getBuyStatus() {
-        return buyStatus;
+    public int getBuyStatusId() {
+        return buyStatusId;
     }
 
-    public void setBuyStatus(int buyStatus) {
-        this.buyStatus = buyStatus;
+    public void setBuyStatusId(int buyStatusId) {
+        this.buyStatusId = buyStatusId;
     }
 
-    public String getBuyStatusName() {
-        return buyStatusName;
+    public int getPlanTypeId() {
+        return planTypeId;
     }
 
-    public void setBuyStatusName(String buyStatusName) {
-        this.buyStatusName = buyStatusName;
+    public void setPlanTypeId(int planTypeId) {
+        this.planTypeId = planTypeId;
     }
 }
