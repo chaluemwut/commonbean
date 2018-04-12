@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class SettingMapping implements Serializable {
+    private int buyStatus;
+    private String buyStatusName;
     private Date dateExpire;
     private int usage;
     private int limit;
@@ -30,5 +32,21 @@ public class SettingMapping implements Serializable {
 
     public void setLimit(int limit) {
         this.limit = limit;
+    }
+
+    public int getBuyStatus() {
+        return buyStatus;
+    }
+
+    public void setBuyStatus(int buyStatus) {
+        this.buyStatus = buyStatus;
+    }
+
+    public String getBuyStatusName() {
+        return buyStatusName;
+    }
+
+    public void setBuyStatusName(String buyStatusName) {
+        this.buyStatusName = buyStatusName;
     }
 }
