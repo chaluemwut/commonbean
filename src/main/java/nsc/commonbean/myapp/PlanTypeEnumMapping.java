@@ -1,10 +1,10 @@
 package nsc.commonbean.myapp;
 
 public enum PlanTypeEnumMapping {
-    FREE(0),
-    M(1),
-    L(2),
-    XL(3);
+    FREE(1),
+    M(2),
+    L(3),
+    XL(4);
 
     private int planTypeId;
 
