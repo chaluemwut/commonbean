@@ -4,15 +4,14 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class CartAdminListMapping implements Serializable {
-	private static final long serialVersionUID = -8161422920229486411L;
-
 	private int sellId;
 	private String buyerName;
 	private String productName;
 	private int sellStatus;
 	private Date createDate;
-	
-	public int getSellId() {
+	private boolean isNSCApp;
+
+    public int getSellId() {
 		return sellId;
 	}
 	public void setSellId(int sellId) {
@@ -44,5 +43,12 @@ public class CartAdminListMapping implements Serializable {
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
-	
+
+    public boolean isNSCApp() {
+        return isNSCApp;
+    }
+
+    public void setNSCApp(boolean NSCApp) {
+        isNSCApp = NSCApp;
+    }
 }
