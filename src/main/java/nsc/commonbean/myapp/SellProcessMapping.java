@@ -31,6 +31,8 @@ public class SellProcessMapping implements Serializable {
     private int status;
 
     private String billResourceId;
+
+    private boolean isNSCApp;
     
     private Set<CartMapping> cartList;
 
@@ -201,4 +203,12 @@ public class SellProcessMapping implements Serializable {
 	public void setBuyerLoginName(String buyerLoginName) {
 		this.buyerLoginName = buyerLoginName;
 	}
+
+    public boolean isNSCApp() {
+        return isNSCApp;
+    }
+
+    public void setNSCApp(boolean NSCApp) {
+        isNSCApp = NSCApp;
+    }
 }
