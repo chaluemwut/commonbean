@@ -6,6 +6,7 @@ import java.util.Date;
 public class SettingMapping implements Serializable {
     private int buyStatusId;
     private int planTypeId;
+    private String planTypeName;
     private Date dateExpire;
     private int usage;
     private int limit;
@@ -48,5 +49,13 @@ public class SettingMapping implements Serializable {
 
     public void setPlanTypeId(int planTypeId) {
         this.planTypeId = planTypeId;
+    }
+
+    public String getPlanTypeName() {
+        return planTypeName;
+    }
+
+    public void setPlanTypeName(String planTypeName) {
+        this.planTypeName = planTypeName;
     }
 }
