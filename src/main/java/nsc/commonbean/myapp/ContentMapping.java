@@ -13,8 +13,9 @@ public class ContentMapping implements Serializable {
 	private int numberOfImage;
 	private int price;
 	private int numberOfItem;
-	private int contentType;
-	
+//	private int contentType;
+	private Integer planTypeId;
+
 	private int dashboardFlag;
 	private int discountPrice;
 	
@@ -119,14 +120,6 @@ public class ContentMapping implements Serializable {
 		this.createDate = createDate;
 	}
 
-	public int getContentType() {
-		return contentType;
-	}
-
-	public void setContentType(int contentType) {
-		this.contentType = contentType;
-	}
-
 	public String getProductUnit() {
 		return productUnit;
 	}
@@ -165,5 +158,13 @@ public class ContentMapping implements Serializable {
 
     public void setPosterUserId(int posterUserId) {
         this.posterUserId = posterUserId;
+    }
+
+    public Integer getPlanTypeId() {
+        return planTypeId;
+    }
+
+    public void setPlanTypeId(Integer planTypeId) {
+        this.planTypeId = planTypeId;
     }
 }
