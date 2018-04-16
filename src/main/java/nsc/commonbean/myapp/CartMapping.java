@@ -7,6 +7,7 @@ public class CartMapping implements Serializable {
 	private String productName;
 	private int price;
 	private int itemCount;
+	private Integer planTypeId;
 
 	public int getProductId() {
 		return productId;
@@ -40,7 +41,15 @@ public class CartMapping implements Serializable {
 		this.itemCount = itemCount;
 	}
 
-	@Override
+    public Integer getPlanTypeId() {
+        return planTypeId;
+    }
+
+    public void setPlanTypeId(Integer planTypeId) {
+        this.planTypeId = planTypeId;
+    }
+
+    @Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
