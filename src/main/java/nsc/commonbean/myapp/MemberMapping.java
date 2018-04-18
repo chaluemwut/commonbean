@@ -8,7 +8,7 @@ public class MemberMapping implements Serializable {
 	private int companyId;
 	private String companyName;
 	private int companyPackage;
-	private int planTypeId;
+	private Integer planTypeId;
 	private int nextPlanTypeId;
 	private String nextPlanTypeName;
 	private String resourceId;
@@ -72,15 +72,15 @@ public class MemberMapping implements Serializable {
 		this.themeId = themeId;
 	}
 
-	public int getPlanTypeId() {
-		return planTypeId;
-	}
+    public Integer getPlanTypeId() {
+        return planTypeId;
+    }
 
-	public void setPlanTypeId(int planTypeId) {
-		this.planTypeId = planTypeId;
-	}
+    public void setPlanTypeId(Integer planTypeId) {
+        this.planTypeId = planTypeId;
+    }
 
-	public int getNextPlanTypeId() {
+    public int getNextPlanTypeId() {
 		return nextPlanTypeId;
 	}
 
