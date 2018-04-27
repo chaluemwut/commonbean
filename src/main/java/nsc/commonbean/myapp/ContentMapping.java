@@ -32,6 +32,8 @@ public class ContentMapping implements Serializable {
 
 	private String posterResourceId;
 
+	private String currency;
+
 	public int getProductId() {
 		return productId;
 	}
@@ -166,5 +168,13 @@ public class ContentMapping implements Serializable {
 
     public void setPlanTypeId(Integer planTypeId) {
         this.planTypeId = planTypeId;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 }
