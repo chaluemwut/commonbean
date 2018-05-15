@@ -5,12 +5,12 @@ import java.io.Serializable;
 /**
  * Created by chaluemwutnoyunsan on 3/22/17.
  */
-public class UserContentCommentMapping implements Serializable{
+public class UserContentCommentMapping implements Serializable {
     private int id;
     private String message;
-
     private int userId;
     private String userName;
+    private String profileResourceId;
 
     public int getId() {
         return id;
@@ -42,5 +42,13 @@ public class UserContentCommentMapping implements Serializable{
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getProfileResourceId() {
+        return profileResourceId;
+    }
+
+    public void setProfileResourceId(String profileResourceId) {
+        this.profileResourceId = profileResourceId;
     }
 }
