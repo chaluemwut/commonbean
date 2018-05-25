@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class CompanyUpdateMapping implements Serializable {
 	public boolean isUpdate;
 	public String updateId;
-	
+
 	public boolean isUpdate() {
 		return isUpdate;
 	}
@@ -18,6 +18,6 @@ public class CompanyUpdateMapping implements Serializable {
 	public void setUpdateId(String updateId) {
 		this.updateId = updateId;
 	}
-	
-	
+
+
 }
