@@ -12,6 +12,7 @@ public class PersonalMapping implements Serializable {
     private String experiment;
     private String interestingTopic;
     private String contact;
+    private String resourceId;
     private Date createDate;
 
     public int getId() {
@@ -84,5 +85,13 @@ public class PersonalMapping implements Serializable {
 
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
+    }
+
+    public String getResourceId() {
+        return resourceId;
+    }
+
+    public void setResourceId(String resourceId) {
+        this.resourceId = resourceId;
     }
 }
