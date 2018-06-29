@@ -7,6 +7,7 @@ public class PromotionMapping implements Serializable {
 	private int id;
 	private String title;
 	private String message;
+	private int showDashboard;
 	private int likeCount;
 	private int shareCount;
 	private Date createDate;
@@ -95,5 +96,13 @@ public class PromotionMapping implements Serializable {
 
     public void setResourceId(String resourceId) {
         this.resourceId = resourceId;
+    }
+
+    public int getShowDashboard() {
+        return showDashboard;
+    }
+
+    public void setShowDashboard(int showDashboard) {
+        this.showDashboard = showDashboard;
     }
 }
